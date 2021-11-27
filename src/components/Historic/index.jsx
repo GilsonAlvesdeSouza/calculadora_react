@@ -6,6 +6,7 @@ function Historic() {
     <Container>
       <DivContent>
         <Title>Histórico</Title>
+        ...
       </DivContent>
       <DivBtn>
         <BtnClear>Apagar</BtnClear>

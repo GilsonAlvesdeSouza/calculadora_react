@@ -5,6 +5,6 @@ export const Container = styled.div`
   padding: 20px;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #0a8cc4;
+  background-color: #00213D;
   height: 100vh;
 `;

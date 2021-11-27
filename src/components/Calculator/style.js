@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  background-color: #fff;
+  background-color: #DCEAF7;
   width: 400px;
   height: 375px;
   border-radius: 10px;
@@ -15,28 +15,33 @@ export const Grid = styled.div`
 
   .display {
     grid-column: 1 / spam 4;
-    height: 60px;
-    font-size: 25px;
+    font-size: 40px;
     padding: 0px;
     text-align: right;
+    width: 375px;
+    background-color: #303006;
+    color: #C9C9C3;
+    border-radius: 10px;
   }
 
   .grid-btn {
-    background-color: #99989a;
+    background-color: #363C3D;
+    color: #FFF;
     text-align: center;
-    padding: 5px;
-    font-size: 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 11.5px;
     :hover {
       opacity: 0.8;
     }
   }
 
-  .grid-btn {
-    background-color: #99989a;
-    text-align: center;
-    padding: 10px;
-    font-size: 20px;
-    cursor: pointer;
+  .btn-div {
+    font-size: 30px;
+  }
+
+  .btn-minus {
+    font-size: 30px;
   }
 
   .btnSum {
