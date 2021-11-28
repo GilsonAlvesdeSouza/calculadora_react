@@ -1,8 +1,11 @@
 import { useState } from "react";
+import { useStateValue } from "../../contexts/StateContext";
 import { Container, Grid } from "./style";
 
 function Calculator() {
+  const [state, dispatch] = useStateValue();
   const [display, setDisplay] = useState("");
+
   const handleClickCal = (value) => {
     switch (value) {
       case "c":
@@ -27,12 +30,12 @@ function Calculator() {
       case "=":
         let res = eval(display.replace("x", "*").replace("÷", "/"));
         setDisplay(res);
+        dispatch({ type: "addHistoric", newHistoric: `${display} = ${res}` });
         break;
       default:
     }
   };
   const handleDisplayChange = (e) => {
-    console.log(e.target.value);
     setDisplay(e.target.value);
   };
   return (
